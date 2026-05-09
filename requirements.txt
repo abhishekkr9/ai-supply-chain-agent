@@ -1,0 +1,30 @@
+# Core ADK + Google GenAI
+google-adk==2.0.0b1
+google-genai==1.75.0
+
+# GCP services
+google-cloud-pubsub==2.38.0
+
+# MCP (Model Context Protocol) MySQL toolset
+mcp==1.27.0
+
+# HTTP client (weather tool)
+requests==2.34.0.dev1
+
+# Environment variable loading
+python-dotenv==1.2.2
+
+# Web server
+uvicorn==0.46.0
+fastapi==0.136.1
+
+# Streamlit UI
+streamlit
+
+# OpenTelemetry tracing — pinned to 1.38.x (required by google-adk 2.0.0b1)
+opentelemetry-sdk==1.38.0
+opentelemetry-api==1.38.0
+opentelemetry-exporter-otlp-proto-grpc==1.38.0
+opentelemetry-exporter-otlp-proto-common==1.38.0
+opentelemetry-proto==1.38.0
+opentelemetry-semantic-conventions==0.59b0
