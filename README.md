@@ -25,7 +25,10 @@ The application is built on a directed graph workflow where different agents han
 
 ```mermaid
 graph TD
-    Start[User Input] --> Orchestrator[Orchestrator Agent]
+    PubSub[(Google Cloud Pub/Sub)] -.->|Async Logistics Events| Context[Session Context / State]
+    Start[User Input] --> Context
+    Context --> Orchestrator[Orchestrator Agent]
+    
     Orchestrator --> Router{Routing Logic}
     
     Router -->|Shipment/Tracking| DB[Database Specialist]
